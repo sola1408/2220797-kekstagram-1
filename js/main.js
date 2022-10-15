@@ -4,5 +4,5 @@ let getRandom = function (min, max){
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min)) + min;
     }
-    return throw new Error("Неправильный диапазон")
+    throw new Error("Неправильный диапазон")
 }
