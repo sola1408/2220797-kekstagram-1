@@ -12,3 +12,4 @@ getRandom(1, 4);
 function checkLengthOfString (string, length = 140) {
   return string.length <= length;
 }
+checkLengthOfString('abc');
