@@ -7,3 +7,8 @@ const getRandom = function (min, max){
   throw new Error('Неправильный диапазон');
 };
 getRandom(1, 4);
+
+
+function checkLengthOfString (string, length = 140) {
+  return string.length <= length;
+}
