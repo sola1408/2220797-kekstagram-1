@@ -1,5 +1,5 @@
-import { generateComments } from "./comments.js";
-import { getRandomNumber } from "./random.js";
+import { generateComments } from "./comments";
+import { getRandomNumber } from "./random";
 export function getPhotoDescriptions(randomCount) {
     const photoDescriptions = [];
     for (let i = 1; i < randomCount; i++) {

@@ -1,5 +1,5 @@
-import { commentTexts, names } from "./data/names.js";
-import { getUniqueRandomNumber, getRandomNumber } from "./random.js";
+import { commentTexts, names } from "./data/names";
+import { getUniqueRandomNumber, getRandomNumber } from "./random";
 export function generateComments(count) {
     const comments = [];
     for (let i = 0; i < count; i++) {
