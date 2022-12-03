@@ -1,6 +1,6 @@
-import { generateComments } from "./comments";
-import { IPhotoDescription } from "./interfaces";
-import { getRandomNumber } from "./random";
+import { generateComments } from "./comments.js";
+import { IPhotoDescription } from "./interfaces.js";
+import { getRandomNumber } from "./random.js";
 
 export function getPhotoDescriptions(randomCount: number): IPhotoDescription[] {
     const photoDescriptions: IPhotoDescription[] = []
