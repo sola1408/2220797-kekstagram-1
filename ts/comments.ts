@@ -1,6 +1,6 @@
-import { commentTexts, names } from "./data/names"
-import { IComment } from "./interfaces"
-import { getUniqueRandomNumber, getRandomNumber } from "./random"
+import { commentTexts, names } from "./data/names.js"
+import { IComment } from "./interfaces.js"
+import { getUniqueRandomNumber, getRandomNumber } from "./random.js"
 
 export function generateComments(count: number): IComment[] {
     const comments: IComment[] = []
