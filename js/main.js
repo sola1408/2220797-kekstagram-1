@@ -1,15 +1,11 @@
-const getRandom = function (min, max){
-  if (min >= 0 && max > min){
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
-  }
-  throw new Error('Неправильный диапазон');
-};
-getRandom(1, 4);
+import {loadPictures} from './pictures.js';
+import { loadErrored } from './messages.js';
+import { sendRequest } from './server-data.js';
+import './full-picture.js';
+import './upload-form.js';
+import './hashtags-validator.js';
+import './effects.js';
+import './filters.js';
 
+sendRequest(loadPictures, loadErrored, 'GET')();
 
-function checkLengthOfString (string, length = 140) {
-  return string.length <= length;
-}
-checkLengthOfString('abc');
